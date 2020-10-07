@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_admin_registrar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelAdminRegistrarVendedorActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Novo vendedor"
+        android:paddingRight="15dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/colorFlowerDark"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBitterSweetDark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="Nome *"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/editText_nome_vendedor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Apelido *"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_apelido_vendedor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_email_vendedor" />
+
+
+            <!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Cidade *"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_cidade_vendedor" /> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/moz"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="+258"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Telefone *"
+                    android:maxLength="9"
+                    android:layout_marginBottom="10sp"
+                    android:ems="10"
+                    android:id="@+id/editText_telefone_vendedor" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/Spinner_Cidade_registro_vendedor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/botaoestiloocodark"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Senha *"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_senha_vendedor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Confirmar Senha *"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_ConfSenha_vendedor" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Button
+                android:id="@+id/button_registrar_vendedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_gravity="center"
+                android:text="Avançar"
+                android:drawableRight="@drawable/ic_next"
+                android:drawablePadding="10dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_vendedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelVendedorActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--inicio Painel de vendedor -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btVendedor_divulgar"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_announcement"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Divulgar"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/btVendedor_pedidos"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_shopping_bag"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Pedidos"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btVendedor_vendas"
+                    android:orientation="vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_shopping_cart"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Vendas"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btVendedor_pagamentos"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_local_atm_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Pagamentos"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:id="@+id/btVendedor_relatorios"
+                            android:orientation="vertical"
+                            android:layout_marginRight="1dp"
+                            android:background="@color/colorBitterSweet">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_folder"
+                                android:layout_marginTop="50dp"
+                                android:tint="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:layout_marginTop="50dp"
+                                android:text="Relatórios"
+                                android:background="@color/colorBitterSweetDark"
+                                android:textColor="@color/colorWhite"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/button_Vendedor_Perfil"
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorBitterSweet">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_avatar"
+                                android:layout_marginTop="50dp"
+                                android:tint="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:layout_marginTop="50dp"
+                                android:text="Perfil"
+                                android:background="@color/colorBitterSweetDark"
+                                android:textColor="@color/colorWhite"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+            <!--
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/espacoFragmento">
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPagerPainelVendedor" ></android.support.v4.view.ViewPager>
+
+            -->
+
+            <!--inicio Painel de vendedor -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

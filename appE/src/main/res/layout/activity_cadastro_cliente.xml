@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rademotions.mercadoinformal.visao.CadastroClienteActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de novo usuário"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorFlowerDark"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:background="@color/colorBitterSweet"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nome *"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_nome_cliente" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Apelido *"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_apelido_cliente" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_email_cliente" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/moz"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="+258"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Telefone *"
+                    android:maxLength="9"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:id="@+id/editText_telefone_cliente" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/Spinner_Cidade_registro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/botaoestiloocodark"/>
+
+            <!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Cidade"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_cidade_cliente" /> -->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Senha *"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_senha_cliente" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Confirma Senha *"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_confirmar_senha_cliente" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:background="@color/colorBitterSweet"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se tem permissão para ser um aministrador selecione a caixa abaixo, caso não tenha essa permissão não é necessário que a selecione."
+                android:textColor="@color/colorBitterSweetDark"
+                android:layout_marginBottom="5dp"
+                android:textSize="10sp"/>
+
+            <CheckBox
+                android:text="Acesso de Administrador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:id="@+id/checkBox_codigo_acesso_administrador" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Inserir codigo de registro de Administrador"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="10dp"
+                android:ems="10"
+                android:id="@+id/editText_codigo_registro_administrador"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:background="@color/colorBitterSweet"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_registrar_cliente"
+                android:layout_gravity="center"
+                android:text="Registrar"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rademotions.mercadoinformal">
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MercadoActivity" />
+        <activity android:name=".Inicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".visao.PainelAdminActivity" />
+        <activity android:name=".visao.PainelVendedorActivity" />
+        <activity android:name=".visao.PainelClienteActivity" />
+        <activity android:name=".visao.LoginActivity" />
+        <activity android:name=".visao.CartaoVisitaActivity" />
+        <activity android:name=".visao.PainelAdminRegistrarVendedorActivity" />
+        <activity android:name=".visao.CadastroClienteActivity" />
+        <activity android:name=".visao.PainelPerfilActivity" />
+        <activity android:name=".visao.ListaClientesActivity" />
+        <activity android:name=".visao.ItemClienteActivity" />
+        <activity android:name=".visao.ListaProdutoActivity" />
+        <activity android:name=".visao.ListaProdutoItemActivity" />
+        <activity android:name=".visao.ListaProdutoMoveisActivity" />
+        <activity android:name=".visao.ListaProdutoMoveisItemActivity" />
+        <activity android:name=".visao.Vincular_Mercado" />
+        <activity android:name=".visao.Painel_admin_vendedor" />
+        <activity android:name=".visao.PainelAdminRegistrarMercado" />
+        <activity android:name=".visao.Painel_admin_mercado" />
+        <activity android:name=".visao.PainelVendedorDivulgar" />
+        <activity android:name=".visao.PainelVendedorDivulgarServico" />
+        <activity android:name=".visao.PainelVendedorDivulgarProduto" />
+        <activity android:name=".visao.ListaServico" />
+        <activity android:name=".visao.ItemServico" />
+        <activity android:name=".visao.ListaRoupa" />
+        <activity android:name=".visao.ListaCalcado" />
+        <activity android:name=".visao.ListaEquipamento" />
+        <activity android:name=".visao.ListaTecnologia" />
+        <activity android:name=".visao.PainelVendedorPagamentos" />
+        <activity android:name=".visao.ListaModalidadePagamento" />
+        <activity android:name=".visao.Painel_admin_categoria" />
+        <activity android:name=".visao.PainelAdminRegistrarCategoria" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".visao.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".visao.TelaCompra" />
+        <activity android:name=".visao.TelaClienteAssistencia" />
+        <activity android:name=".visao.DefinirPagamento" />
+        <activity android:name=".visao.ListaMercados" />
+        <activity android:name=".visao.ListaVendedores" />
+        <activity android:name=".visao.ListaDivulgacao" />
+        <activity android:name=".visao.PainelAdminEstatistica" />
+        <activity android:name=".visao.PainelAdminRelatorios" />
+        <activity android:name=".visao.PainelVendedorRelatorios" />
+        <activity android:name=".visao.PainelVendedorVendas" />
+        <activity android:name=".visao.PainelVendedorPedidos" />
+        <activity android:name=".visao.PainelClienteFavoritos" />
+        <activity android:name=".visao.PainelClienteCompras"></activity>
+    </application>
+
+</manifest>

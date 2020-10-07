@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_admin_registrar_mercado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelAdminRegistrarMercado"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar novo Mercado"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/colorFlowerDark"
+                android:layout_margin="15dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Nome do Mercado *"
+                    android:layout_marginBottom="10sp"
+                    android:ems="10"
+                    android:id="@+id/editText_nome_mercado"
+                    android:background="@drawable/botaoestiloocodark"/>
+
+                <Spinner
+                    android:id="@+id/Spinner_Cidade_mercado"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/botaoestiloocodark"/>
+
+                <Spinner
+                    android:id="@+id/Spinner_Provincia_mercado"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/botaoestiloocodark"/>
+
+                <!--
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Cidade / distrito / vila *"
+                    android:layout_marginBottom="10sp"
+                    android:ems="10"
+                    android:id="@+id/editText_cidade_mercado"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Provincia *"
+                    android:layout_marginBottom="10sp"
+                    android:ems="10"
+                    android:id="@+id/editText_provincia_mercado"/>
+                    -->
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBitterSweetDark"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Localização *"
+                        android:textColor="@color/colorBitterSweetDark"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_place_black_24dp"
+                            android:tint="@color/colorBitterSweetDark"
+                            android:layout_marginLeft="100dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Obter"
+                            android:textColor="@color/colorBitterSweetDark"
+                            android:textSize="18sp"
+                            android:id="@+id/textView2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Latitude *"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:ems="10"
+                    android:id="@+id/editText_latitude_mercado"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:hint="Longitude *"
+                    android:layout_marginLeft="20dp"
+                    android:ems="10"
+                    android:id="@+id/editText_longitude_mercado"/>
+
+                </LinearLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Button
+                android:id="@+id/button_registrar_mercado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:text="Registrar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

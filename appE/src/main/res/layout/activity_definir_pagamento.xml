@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_definir_pagamento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.DefinirPagamento"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_local_atm_black_24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:tint="@color/colorBitterSweet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Modalidade de Pagamento"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorBitterSweet"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoestilooco"
+        android:backgroundTint="@color/colorGraySweetDark"
+        android:layout_marginTop="20dp"
+        android:padding="1dp"
+        android:layout_gravity="center">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:id="@+id/spinner_selecionar_modalidade"
+            android:background="@drawable/botaoestiloocodark"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView_pagamentos"
+            android:src="@drawable/ic_local_atm_black_24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insira seu número de telefone da conta"
+            android:textColor="@color/colorBitterSweetDark"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+258"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="821068307"
+                android:id="@+id/editText_tela_pagamentos_telefone"
+                android:textColor="@color/colorDarkBlue"
+                android:inputType="phone"
+                android:maxLength="9"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIN: "
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="- - - -"
+                android:id="@+id/editText_tela_pagamentos_pin"
+                android:textColor="@color/colorDarkBlue"
+                android:inputType="numberPassword"
+                android:maxLength="5"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenha atenção que ao fazer o registro, o seu número de telefone deve estar devidamente associado a um serviço de Mobile Banking."
+            android:textColor="@color/colorBitterSweet"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adira ao serviço via USSD digitando *Numero de Serviço#"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="10sp"
+            android:id="@+id/textView_digito"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button_tela_pagamentos_registrar"
+        android:background="@drawable/botaoestilobitter"/>
+
+</LinearLayout>

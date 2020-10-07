@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelClienteActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkBlue"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ImageView_icone_perfil_usuario"
+                android:background="@drawable/minf"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:textSize="15sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/textView_nome_usuario"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email.exemplo@gmail.com"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/textView_email_usuario"
+                    android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--inicio Painel de vendedor -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="2dp"
+                            android:id="@+id/button_Cliente_Compra"
+                            android:background="@color/colorDarkBlue">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_shopping_cart"
+                                android:layout_marginTop="50dp"
+                                android:tint="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:layout_marginTop="50dp"
+                                android:text="Compras"
+                                android:background="@color/colorFlower"
+                                android:textColor="@color/colorWhite"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/button_Cliente_Desejo"
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="1dp"
+                            android:background="@color/colorDarkBlue">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_heart"
+                                android:layout_marginTop="50dp"
+                                android:tint="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:layout_marginTop="50dp"
+                                android:text="Favoritos"
+                                android:background="@color/colorFlower"
+                                android:textColor="@color/colorWhite"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:id="@+id/button_Cliente_Mercado"
+                    android:orientation="vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorDarkBlue">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_store_mall_directory_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Mercados"
+                        android:background="@color/colorFlower"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_Cliente_Rotas"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/colorDarkBlue">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_pin_drop_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Rotas"
+                        android:background="@color/colorFlower"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/button_Cliente_Assistencia"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/colorDarkBlue">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_chat_2"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Assistência"
+                        android:background="@color/colorFlower"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_Cliente_Perfil"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/colorDarkBlue">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_avatar"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Perfil"
+                        android:background="@color/colorFlower"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--inicio Painel de vendedor -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

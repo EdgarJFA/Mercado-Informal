@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lista_produto_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.ListaProdutoItemActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ImageView_icone_produto"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:id="@+id/box_Info_usuario">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do Produto"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_nome_Produto_adaptador"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Preço"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_Preco_Produto_adaptador"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disponibilidade"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_disponibilidade_produto"
+                    android:layout_centerHorizontal="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorDarkBlue" />
+
+
+</LinearLayout>

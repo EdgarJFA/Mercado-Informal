@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_vendedor_divulgar_servico"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelVendedorDivulgarServico"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar novo Serviço"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/colorFlowerDark"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBitterSweetDark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Nome do serviço *"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/editText_nome_servico" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Preço *"
+                android:layout_marginBottom="3sp"
+                android:ems="10"
+                android:id="@+id/editText_preco_servico" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Descrição do serviço"
+                android:background="@drawable/botaoestiloocodark"
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_descricao_servico" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:maxHeight="150dp"
+                android:id="@+id/ImageView_foto_servico"
+                android:background="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/button_carregar_imagem_Produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_gravity="center"
+                android:text="Selecionar Imagem"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Spinner
+                android:id="@+id/Spinner_Categoria_Servico"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disponibilidade do Serviço *"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBitterSweetDark"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:id="@+id/radioGrupo_disponibilidade_servico">
+
+                <RadioButton
+                    android:text="Disponivél"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_disponivel_servico"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Indisponivél"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_Indisponivel_servico"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+            <!--
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/radioGrupo_modalidade_pagamento_servico">
+
+
+
+                            <RadioButton
+                                android:text="Pré-Pagamento"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radioButton_modalidade_pre_pagamento"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:text="Pós-Pagamento"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radioButton_modalidade_pos_pagamento"
+                                android:layout_weight="1" />
+                        </RadioGroup>
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorBitterSweetDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Modalidades de preço *"
+                            android:textColor="@color/colorBitterSweetDark"
+                            android:textSize="20sp"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/radioGrupo_modalidade_preco">
+
+                            <RadioButton
+                                android:text="Preço Negociável"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radioButton_modalidade_preco_negociavel"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:text="Preço Fixo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radioButton_tipo_modalidade_preco_fixo"
+                                android:layout_weight="1" />
+                        </RadioGroup> -->
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Button
+                android:id="@+id/button_registrar_vendedor_servico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_gravity="center"
+                android:text="Registrar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

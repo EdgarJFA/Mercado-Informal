@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_item_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.ItemClienteActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ImageView_icone_usuario"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/group_2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:id="@+id/box_Info_usuario">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_nome_usuario_adaptador"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contacto"
+                    android:textSize="15sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_numero_usuario"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email.exemplo@gmail.com"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_email_usuario"
+                    android:layout_centerHorizontal="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo Usuario"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/TextView_nivel_usuario"
+                    android:layout_centerHorizontal="true"/>
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:tint="@color/colorDarkBlue"
+                    android:visibility="invisible"
+                    android:id="@+id/ImageView_editar_conta_usuario"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/ic_garbage"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="10dp"
+                    android:visibility="invisible"
+                    android:tint="@color/colorDarkBlue"
+                    android:id="@+id/ImageView_remover_conta_usuario"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorDarkBlue" />
+
+</LinearLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelAdminActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btAdmin_reg_Vendedor"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_people_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"
+                        android:id="@+id/imageView" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Vendedores"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/btAdmin_reg_Mercado"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_layers"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Mercados"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da primeira linha-->
+
+            <!-- Inicio da segunda linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btAdmin_reg_Categoria"
+                    android:orientation="vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_hierarchy"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Categórias"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout> -->
+
+                <LinearLayout
+                    android:id="@+id/btAdmin_lista"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_group"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Gestão de  Usuários"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da segunda linha-->
+
+            <!-- Inicio da terceira linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btAdmin_Estatistica"
+                    android:orientation="vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_equalizer_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Estatísticas"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btAdmin_reg_Relatorio"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_folder"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Relatórios"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da terceira linha-->
+
+            <!-- Inicio do rodape linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/button_Administrador_Home"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_house"
+                        android:layout_margin="10dp"
+                        android:tint="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_Administrador_Mapa"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_pin_drop_black_24dp"
+                        android:layout_margin="10dp"
+                        android:tint="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_Administrador_Perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_avatar"
+                        android:layout_margin="10dp"
+                        android:tint="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim do rodape linha-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rademotions.mercadoinformal.Inicio"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/minf1"
+        android:id="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@android:dimen/thumbnail_height" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mercado_informalb"
+        android:layout_marginBottom="128dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp" />
+
+    <TextView
+        android:text="Tudo num só lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

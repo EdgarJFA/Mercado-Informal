@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_vendedor_divulgar_produto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelVendedorDivulgarProduto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar novo Produto"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/colorFlowerDark"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBitterSweetDark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Nome do Produto *"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/editText_nome_produto" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Preço *"
+                android:layout_marginBottom="5sp"
+                android:ems="10"
+                android:id="@+id/editText_preco_produto" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Descrição do produto *"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/botaoestiloocodark"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/editText_descricao_produto" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:maxHeight="150dp"
+                android:id="@+id/ImageView_foto_produto"
+                android:background="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/button_carregar_imagem_Produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_gravity="center"
+                android:text="Imagem do Produto"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Spinner
+                android:id="@+id/Spinner_Categoria_produto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disponibilidade *"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBitterSweetDark"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:id="@+id/radioGrupo_disponibilidade_produto">
+
+                <RadioButton
+                    android:text="Disponivél"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_disponivel_produto"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Disponivél por Encomenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_disponivelEncomenda_produto"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Indisponivél"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_Indisponivel_produto"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+            <!-- comentario -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidade de massa *"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBitterSweetDark"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:id="@+id/radioGrupo_unidadeMassa_Produto">
+
+                <RadioButton
+                    android:text="Kilogramas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_unidadeMassa_kilogramas"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Quantidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton_unidadeMassa_quantidade"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Quantidade do Produto *"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:id="@+id/editText_quantidade_produto"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Button
+                android:id="@+id/button_registrar_vendedor_Produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_gravity="center"
+                android:text="Registrar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/botaoestilooco"
+    android:backgroundTint="@color/colorWhite"
+    android:padding="1dp"
+    android:layout_gravity="center">
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/painel_admin_estatistica_Grafico_Mercados"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_margin="10dp">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <!--
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/painel_admin_estatistica_Grafico_Usuarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.PieChart>
+
+    </android.support.v7.widget.CardView>
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/estatistica_total_mercados"
+        android:text="Total Mercados: "
+        android:textColor="@color/colorDarkBlue"
+        android:gravity="center"
+        android:textSize="13sp"/>
+
+</LinearLayout>

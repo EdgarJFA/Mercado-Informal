@@ -1,0 +1,72 @@
+--
+-- File generated with SQLiteStudio v3.2.1 on Thu Jul 18 18:29:21 2019
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: categoria
+DROP TABLE IF EXISTS categoria;
+CREATE TABLE categoria (_id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, data_criacao DATE, imagem BLOB, id_administrador INTEGER REFERENCES cliente (_id) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+-- Table: cliente
+DROP TABLE IF EXISTS cliente;
+CREATE TABLE cliente (_id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, apelido TEXT, email TEXT, telefone INTEGER, cidade TEXT, senha TEXT, tipo_usuario TEXT);
+INSERT INTO cliente (_id, nome, apelido, email, telefone, cidade, senha, tipo_usuario) VALUES (1, 'Edgar', 'Amado', 'edgaramado@gmail.com', 845755717, 'Beira', 'Admin12345', 'A3');
+INSERT INTO cliente (_id, nome, apelido, email, telefone, cidade, senha, tipo_usuario) VALUES (2, 'Fidelcio', 'Sortane', 'fidelcio@gmail.com', 841111111, 'Maputo', 'Admin789', 'A3');
+INSERT INTO cliente (_id, nome, apelido, email, telefone, cidade, senha, tipo_usuario) VALUES (3, 'Lucas', 'Chaima', 'chaima@gmail.com', 846500475, 'Quelimane', 'lucas', 'A2');
+
+-- Table: compra_produto
+DROP TABLE IF EXISTS compra_produto;
+CREATE TABLE compra_produto (_id INTEGER PRIMARY KEY AUTOINCREMENT, data_compra TEXT, id_produto INTEGER REFERENCES produto (_id) ON DELETE CASCADE ON UPDATE CASCADE, id_cliente INTEGER REFERENCES cliente (_id) ON DELETE CASCADE ON UPDATE CASCADE, id_transacao INTEGER REFERENCES transacao (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+-- Table: compra_servico
+DROP TABLE IF EXISTS compra_servico;
+CREATE TABLE compra_servico (_id INTEGER PRIMARY KEY AUTOINCREMENT, data_compra TEXT, id_servico INTEGER REFERENCES servico (_id) ON DELETE CASCADE ON UPDATE CASCADE, id_cliente INTEGER REFERENCES cliente (_id) ON DELETE CASCADE ON UPDATE CASCADE, id_transacao INTEGER REFERENCES transacao (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+-- Table: lista_desejo
+DROP TABLE IF EXISTS lista_desejo;
+CREATE TABLE lista_desejo (_id INTEGER PRIMARY KEY AUTOINCREMENT, id_cliente INTEGER REFERENCES cliente (_id) ON DELETE CASCADE ON UPDATE CASCADE, id_produto INTEGER);
+INSERT INTO lista_desejo (_id, id_cliente, id_produto) VALUES (1, 1, 2);
+
+-- Table: mercado
+DROP TABLE IF EXISTS mercado;
+CREATE TABLE mercado (_id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, cidade TEXT, provincia TEXT, latitude TEXT, longitude TEXT);
+INSERT INTO mercado (_id, nome, cidade, provincia, latitude, longitude) VALUES (1, 'Goto', 'Beira', 'Sofala', '-43.876', '543.987');
+INSERT INTO mercado (_id, nome, cidade, provincia, latitude, longitude) VALUES (2, 'Maquinino', 'Beira', 'Sofala', NULL, NULL);
+
+-- Table: modalidade_pagamento
+DROP TABLE IF EXISTS modalidade_pagamento;
+CREATE TABLE modalidade_pagamento (_id INTEGER PRIMARY KEY AUTOINCREMENT, data TEXT NOT NULL, nome TEXT NOT NULL, telefone INTEGER UNIQUE NOT NULL, id_vendedor INTEGER REFERENCES vendedor (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+-- Table: perfil
+DROP TABLE IF EXISTS perfil;
+CREATE TABLE perfil (id INTEGER PRIMARY KEY AUTOINCREMENT, foto BLOB, id_usuario INTEGER REFERENCES cliente (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+-- Table: produto
+DROP TABLE IF EXISTS produto;
+CREATE TABLE produto (_id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, preco DOUBLE, descricao TEXT, imagem BLOB, data_publicacao TEXT, disponibilidade TEXT, categoria TEXT, quantidade INTEGER, id_vendedor INTEGER REFERENCES vendedor (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+INSERT INTO produto (_id, nome, preco, descricao, imagem, data_publicacao, disponibilidade, categoria, quantidade, id_vendedor) VALUES (1, 'Milo', 150.0, 'Grande com +5% de energia', NULL, '14/04/2019', NULL, 'Alimento', '', 2);
+INSERT INTO produto (_id, nome, preco, descricao, imagem, data_publicacao, disponibilidade, categoria, quantidade, id_vendedor) VALUES (2, 'Sapatilha Nike', 700.0, 'Nº 42 para homem', NULL, NULL, NULL, 'Vestuario', 3, 1);
+
+-- Table: servico
+DROP TABLE IF EXISTS servico;
+CREATE TABLE servico (_id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, preco DOUBLE, descricao TEXT, imagem BLOB, data_publicacao TEXT, disponibilidade TEXT, categoria TEXT, id_vendedor INTEGER REFERENCES vendedor (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+INSERT INTO servico (_id, nome, preco, descricao, imagem, data_publicacao, disponibilidade, categoria, id_vendedor) VALUES (1, 'canalização', 3456.0, 'para casa de banho', NULL, NULL, NULL, NULL, 1);
+INSERT INTO servico (_id, nome, preco, descricao, imagem, data_publicacao, disponibilidade, categoria, id_vendedor) VALUES (2, 'Eletricidade', 6543.0, 'geral para casas tipo 4', NULL, NULL, NULL, NULL, 1);
+INSERT INTO servico (_id, nome, preco, descricao, imagem, data_publicacao, disponibilidade, categoria, id_vendedor) VALUES (3, 'mingau', 345.0, 'vdvdvv', NULL, NULL, 'disponivel', 'alimentação', 1);
+INSERT INTO servico (_id, nome, preco, descricao, imagem, data_publicacao, disponibilidade, categoria, id_vendedor) VALUES (4, 'mingau', 345.0, 'vdvdvv', NULL, NULL, 'disponivel', 'alimentação', 2);
+
+-- Table: transacao
+DROP TABLE IF EXISTS transacao;
+CREATE TABLE transacao (_id INTEGER PRIMARY KEY AUTOINCREMENT, data_transacao TEXT NOT NULL, valor_transacao DOUBLE NOT NULL, id_modalidade INTEGER REFERENCES modalidade_pagamento (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+
+-- Table: vendedor
+DROP TABLE IF EXISTS vendedor;
+CREATE TABLE vendedor (_id INTEGER PRIMARY KEY AUTOINCREMENT, licensa_comercial TEXT, documento_tipo TEXT, nr_documento TEXT, sexo TEXT, atividade TEXT, idade INTEGER, id_cliente INTEGER REFERENCES cliente (_id) ON DELETE CASCADE ON UPDATE CASCADE, id_mercado INTEGER REFERENCES mercado (_id) ON DELETE CASCADE ON UPDATE CASCADE);
+INSERT INTO vendedor (_id, licensa_comercial, documento_tipo, nr_documento, sexo, atividade, idade, id_cliente, id_mercado) VALUES (1, NULL, NULL, NULL, 'Masculino', 'Vendedor de Produtos', NULL, 3, NULL);
+INSERT INTO vendedor (_id, licensa_comercial, documento_tipo, nr_documento, sexo, atividade, idade, id_cliente, id_mercado) VALUES (2, NULL, NULL, NULL, 'masculino', 'prestador de servico', NULL, 1, NULL);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/botaoestilooco"
+    android:backgroundTint="@color/colorWhite"
+    android:padding="1dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_tela_comprar_fechar"
+        android:backgroundTint="@color/colorDarkBlue"
+        android:background="@drawable/ic_highlight_off_black_24dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="-20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_mood_bad_black_24dp"
+        android:backgroundTint="@color/colorBitterSweetDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPS!"
+        android:textColor="@color/colorBitterSweetDark"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Infelizmente Voçê não possui conta"
+        android:textColor="@color/colorBitterSweetDark"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crie uma conta para poder usar a aplicação. Para isso basta clicar no botão Criar Conta."
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar conta"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_tela_comprar_CriarConta"
+        android:background="@drawable/botaoestilobitter"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Já Tenho conta! Entrar"
+        android:textColor="@color/colorBitterSweet"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/button_tela_comprar_Entrar"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mercado Informal © 2019"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>

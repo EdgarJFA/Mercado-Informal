@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_admin_registrar_categoria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelAdminRegistrarCategoria"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar nova Categória"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/colorFlowerDark"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBitterSweetDark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nome da Categória *"
+                android:layout_marginBottom="10sp"
+                android:ems="10"
+                android:id="@+id/editText_nome_categoria"/>
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/ImageView_icone_categoria"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/button_carregar_icone_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:layout_gravity="center"
+                android:text="Icone da categória"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data *"
+                android:textColor="@color/colorBitterSweetDark"
+                android:textSize="18sp"/>
+
+            <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendario_categoria_data">
+
+            </CalendarView>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <Button
+                android:id="@+id/button_registrar_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilobitter"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:text="Registrar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

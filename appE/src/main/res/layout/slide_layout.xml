@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/group_10"
+        android:id="@+id/imageView_cartaoVisita"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_cartaoVisita"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:id="@+id/textView_cartaoVisita_titulo" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_cartaoVisita_titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:id="@+id/textView_cartaoVisita_descricao" />
+</RelativeLayout>

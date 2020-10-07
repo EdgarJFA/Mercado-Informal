@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelPerfilActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ImageView_icone_perfil"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/group_2"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/ImageView_icone_perfil"
+            android:id="@+id/textView_nome_perfil"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email.exemplo@gmail.com"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textView_email_perfil"
+            android:layout_below="@id/textView_nome_perfil"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:tint="@color/colorDarkBlue"
+            android:id="@+id/ImageView_editar_dados_perfil"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_settings"
+            android:layout_gravity="center"
+            android:tint="@color/colorDarkBlue"
+            android:id="@+id/ImageView_definicao_conta_perfil"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalhes da Conta"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorDarkBlue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informações Pessoais"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:id="@+id/TextView_nome_perfil_dublicata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_avatar"
+                    android:hint="    Nome e Apelido"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contactos"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:id="@+id/TextView_telefone_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:hint="    Telemovel"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:id="@+id/TextView_email_perfil_dublicata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:hint="    Email"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localização"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:id="@+id/TextView_cidade_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_place_black_24dp"
+                    android:hint="    Cidade"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorDarkBlue"/>
+
+                <TextView
+                    android:id="@+id/titulo_dados_adicionais_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados Adicionais"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/TextView_nrBi_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_error_outline_black_24dp"
+                    android:hint="    Documento"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkBlue" />
+
+                <TextView
+                    android:id="@+id/TextView_mercado_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_error_outline_black_24dp"
+                    android:hint="    Mercado"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkBlue" />
+
+                <TextView
+                    android:id="@+id/TextView_provincia_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_error_outline_black_24dp"
+                    android:hint="    Provincia"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkBlue" />
+
+                <TextView
+                    android:id="@+id/TextView_categoria_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_error_outline_black_24dp"
+                    android:hint="    Categoria"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkBlue" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorDarkBlue" />
+
+</LinearLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mercado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rademotions.mercadoinformal.MercadoActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Inicio da primeira linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Alimento"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_local_dining_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Alimentação"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Moveis"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_weekend_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Móveis"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da primeira linha-->
+
+            <!-- Inicio da segunda linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Roupa"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_sweatshirt"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Roupa"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Calcados"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_sandals"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Calçados"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da segunda linha-->
+
+            <!-- Inicio da terceira linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Servico"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_build_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Serviços"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Tecnologia"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_laptop_mac_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Tecnologia"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da terceira linha-->
+
+            <!-- Inicio da quarta linha-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btMercado_Equipamentos"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_explicit_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Equipamentos"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btMercado_outras_vendas"
+                    android:layout_width="190dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorBitterSweet">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_card_giftcard_black_24dp"
+                        android:layout_marginTop="50dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Outras Vendas"
+                        android:background="@color/colorBitterSweetDark"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Fim da quarta linha-->
+
+            <LinearLayout
+                android:id="@+id/btMercado_Ler_Mais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/colorBitterSweet">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_local_library_black_24dp"
+                    android:tint="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="Sobre Nós | Mercado Informal © 2019."
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

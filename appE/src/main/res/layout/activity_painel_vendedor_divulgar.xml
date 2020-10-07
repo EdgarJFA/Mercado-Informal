@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_painel_vendedor_divulgar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    tools:context="com.rademotions.mercadoinformal.visao.PainelVendedorDivulgar"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_announcement"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="50dp"
+        android:tint="@color/colorBitterSweetDark"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="50dp"
+        android:text="Divulgar"
+        android:textSize="18sp"
+        android:textColor="@color/colorBitterSweetDark"/>
+
+
+    <Button
+        android:id="@+id/bt_registrar_servico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoestilobitter"
+        android:drawableLeft="@drawable/ic_plus_one_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:text="Registrar Serviço"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/bt_registrar_Produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoestilobitter"
+        android:drawableLeft="@drawable/ic_plus_one_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:text="Registrar Produto"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/bt_ver_divulgacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoestilobitter"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:text="visualizar Divulgações"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/bt_vendedor_divulgar_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoestilobitter"
+        android:drawableLeft="@drawable/ic_reply_all_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:text="Retornar ao painel"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"/>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/botaoestilooco"
+    android:backgroundTint="@color/colorWhite"
+    android:padding="1dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_tela_cadastro_fechar"
+        android:backgroundTint="@color/colorDarkBlue"
+        android:background="@drawable/ic_highlight_off_black_24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESCOLHA UMA DAS OPÇÕES ABAIXO PARA REGISTRAR A SUA CONTA. "
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="12sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar com facebook"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_tela_cadastro_CriarContaFacebook"
+        android:background="@drawable/botaoestiloocoprimary"/>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar com Google"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorBitterSweetDark"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/ic_google_plus"
+        android:id="@+id/button_tela_cadastro_CriarContaGoogle"
+        android:background="@drawable/botaoestiloocodark"/>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Registro Padrão"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_tela_cadastro_CriarContaNormal"
+        android:background="@drawable/botaoestilobitter"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mercado Informal © 2019"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>

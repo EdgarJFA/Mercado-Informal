@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lista_produto_mobila_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.rademotions.mercadoinformal.visao.ListaProdutoMoveisItemActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Usuario (Vendedor)"
+        android:drawableLeft="@drawable/ic_weekend_black_24dp"
+        android:drawableTint="@color/colorBitterSweetDark"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/TextView_nome_Produto_moblibia_adaptador"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Usuario (Vendedor)"
+        android:drawableLeft="@drawable/ic_local_offer_black_24dp"
+        android:drawableTint="@color/colorBitterSweetDark"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/TextView_Preco_Produto_moblibia_adaptador"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Usuario (Vendedor)"
+        android:drawableLeft="@drawable/ic_local_offer_black_24dp"
+        android:drawableTint="@color/colorBitterSweetDark"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/TextView_Descricao_Produto_moblibia_adaptador"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Usuario (Vendedor)"
+        android:drawableLeft="@drawable/ic_local_offer_black_24dp"
+        android:drawableTint="@color/colorBitterSweetDark"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/TextView_Tipo_Produto_moblibia_adaptador"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBitterSweetDark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_compra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.rademotions.mercadoinformal.visao.TelaCompra"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/background8">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="showImageZoom"
+                    android:id="@+id/ImageView_compra_item"
+                    android:src="@drawable/image"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-40dp"
+                    android:background="@drawable/botaoestilooco"
+                    android:backgroundTint="@color/colorWhite"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorDarkBlue"
+                        android:text="Mercado Informal © 2019. Todos direitos reservados." />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorBitterSweetDark"
+                    android:src="@drawable/ic_local_mall_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do item"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="20sp"
+                    android:id="@+id/label_nome_item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_cash"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_preco_item"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:text="Preço"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorDarkBlue"
+                    android:text=" Mt/Mzn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBitterSweetDark"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBitterSweetDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBitterSweetDark"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição detalhada do Item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/label_descricao_item"
+                android:textColor="@color/colorDarkBlue"
+                android:background="@drawable/botaoestiloocodark"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/label_disponibilidade_bem_estado"
+                    android:tint="@color/colorGreenDark"
+                    android:src="@drawable/ic_watch_later_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_disponibilidade_item"
+                    android:textColor="@color/colorDarkBlue"
+                    android:text="Disponiblilidade"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/icone_Desejo_lista"
+                    android:src="@drawable/ic_heart"/>
+
+                <CheckedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/label_lista_desejo_item"
+                    android:textColor="@color/colorDarkBlue"
+                    android:text="Adicionar a lista de desejos" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorBitterSweetDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBitterSweetDark"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informação Adicional"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBitterSweetDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBitterSweetDark"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorBitterSweetDark"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_avatar"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/txtViewTelaCompra_nomeVendedor"
+                    android:textColor="@color/colorDarkBlue"
+                    android:text="Nome do vendedor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/label_contacto_vendedor"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtViewTelaCompra_contatoVendedor"
+                        android:textColor="@color/colorDarkBlue"
+                        android:text="Contacto"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:id="@+id/ImageView_compra_sms"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_chat_black_24dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:id="@+id/ImageView_compra_email"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_email_black_24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_place_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkBlue"
+                    android:id="@+id/txtViewTelaCompra_mercadoVendedor"
+                    android:text="Mercado"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorBitterSweetDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBitterSweetDark"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avaliação"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBitterSweetDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorBitterSweetDark"
+                    android:textSize="25sp"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorBitterSweetDark"/>
+
+            </LinearLayout>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="-15dp"
+                android:rating="0"
+                android:progressTint="@color/colorYellow"
+                android:id="@+id/label_avaliacao_item"
+                android:numStars="5"
+                android:scaleY="0.5"
+                android:scaleX="0.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obrigado por avaliar"
+                android:id="@+id/label_avaliacao_item_resultado"
+                android:drawableLeft="@drawable/ic_mood_black_24dp"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:drawableTint="@color/colorYellow"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorBitterSweetDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disponível apenas por pagamento físico"
+                android:layout_marginBottom="7dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:id="@+id/txtViewTelaCompra_disponibilidade_pagamento"
+                android:textColor="@color/colorDarkBlue"
+                android:drawableTint="@color/colorYellow"/>
+
+            <Button
+                android:id="@+id/bt_comprar_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoestilodark"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:text="comprar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

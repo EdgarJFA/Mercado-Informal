@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_lista_mercado_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botaoestiloocodark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ImageView_icone_produto"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_layers"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:id="@+id/box_Info_usuario">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Mercado"
+                android:textSize="20sp"
+                android:textColor="@color/colorDarkBlue"
+                android:id="@+id/TextView_nome_Mercado_adaptador"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provincia"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBitterSweetDark"
+                android:id="@+id/TextView_Provincia_Mercado_adaptador"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade"
+                android:textSize="10sp"
+                android:textColor="@color/colorBitterSweetDark"
+                android:id="@+id/TextView_cidade_mercado_adaptador"
+                android:layout_centerHorizontal="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
